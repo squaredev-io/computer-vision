@@ -14,7 +14,7 @@ Computer vision trains machines to perform these functions, but it has to do it 
 
 Computers work in binary mode, means that all the data are essentially represented as 0 and 1. All data must be converted into binary in order for a computer to process it. Images are no exception as they can be represented as tabular data. To create the picture, a grid can be set out and the squares, known as pixels, coloured (0 - black and 1 - white) - these are the so called black/white images:
 
-![Image representation](cv_algorithms/images/Untitled.png)
+![Image representation](images/Untitled.png)
 
 #### **1.1.1 Depth**
 
@@ -27,7 +27,7 @@ For example, using a depth of two, ie two bits per pixel, would allow four possi
 - 10 - light grey
 - 11 - white
 
-![Image with depth](cv_algorithms/images/depth.png)
+![Image with depth](images/depth.png)
 
 Each extra bit doubles the range of colours that are available:
 
@@ -55,7 +55,7 @@ Image quality is affected by the resolution of the image. The resolution of an
 
 As we already mention, grayscale images are represented as grids of values (depending of the depth the different values could be from 2 to 256). The most common form of coloured images are the RGB. RGB stands for Red, Green and Blue. In order to create those colorful images we need to stack 3 grids, one on top of the other. In this case grids are called channels.  Each pixel is a mix of those three channels.
 
-![Image with colors](cv_algorithms/images/colors.png)
+![Image with colors](images/colors.png)
 
 #### **Image representation for Python**
 
@@ -71,7 +71,7 @@ Image Classification is a fundamental task that attempts to comprehend an entir
 
 Image classification is a supervised learning problem: define a set of target classes (objects to identify in images), and train a model to recognise them using labeled example photos. Early computer vision models relied on raw pixel data as the input to the model.
 
-![Image classification](cv_algorithms/images/catdog.png)
+![Image classification](images/catdog.png)
 
 ##### **1.2.1.1 Modelling approaches for supervised image classification**
 
@@ -88,7 +88,7 @@ CNN algorithm is based on various modules that are structured in a specific work
 - Pooling Layer
 - Classification — Fully Connected Layer
 
-![CNN](cv_algorithms/images/cnn.png)
+![CNN](images/cnn.png)
 
 Input Image:
 
@@ -104,7 +104,7 @@ Image Dimensions = n1 x n2 x 1 where n1 = height, n2 = breadth, and 1 = Number 
 
 So, as an example, the formula will become I D = 5 x 5 x 1. We will explain this using the image given below.
 
-![kernel](cv_algorithms/images/kernel.png)
+![kernel](images/kernel.png)
 
 In this image, the green section shows the 5 x 5 x 1 formula. The yellow box evolves from the first box till last, performing the convolutional operation on every 3x3 matrix. This operation is called Kernel (K) and work on the basis of the following binary algorithm.
 
@@ -123,7 +123,7 @@ This is the value which depicted in the bottom right corner of the pink grid.
 
 In the below figure, the Kernel moves to the right with a defined value for “Stride.” Along the way, it parses the image objects until it completes the breadth. Then it hops down to the second row on the left and moves just as in the top row till it covers the whole image. The process keeps repeating until every part of the image is parsed.
 
-![kernel_parse](cv_algorithms/images/parse.png)
+![kernel_parse](images/parse.png)
 
 If there are multiple channels such as found in RGB images, then the kernel contains the same depth as found in the input image. The multiplication of the matrix is implemented based on the number of Ks. The procedure is followed as in *stack* format, for example, {K1, I1}, {K2, I2}, and so on. The results are generated based on the summation of bias. The result is in the form of a squeezed “1-depth channel” of convoluted feature output.
 
@@ -131,7 +131,7 @@ The goal of this convolution operation is to obtain all the high-level features 
 
 The objective of these layers is to reduce the dimensionality of the image that is found in the original input image and to increase dimensionality or, in some cases, to leave it unchanged, depending on the required output. The same padding is applied to convolute the image to different dimensions of the matrix, while valid padding is applied when there is no need to change the dimension of the matrix.
 
-![kernel_channel](cv_algorithms/images/kernel-channel.png)
+![kernel_channel](images/kernel-channel.png)
 
 Pooling layer:
 
@@ -145,7 +145,7 @@ Max Pooling: ****The Max Pooling basically provides the maximum value within th
 
 Average Pooling: The Average Pooling provides and returns the average value within the covered image by the Kernel.
 
-![pooling](cv_algorithms/images/pooling.png)
+![pooling](images/pooling.png)
 
 The other functionality of Max Pooling is also noise-suppressing, as it works on discarding those activations which contain noisy activation. And on the other side, the Average Pooling simply works on the mechanism of noise-suppressing by dimensionality reduction. So, in short words, we can conclude that Max Pooling works more efficiently than Average Pooling.
 
@@ -199,7 +199,7 @@ Moreover, residual connections are included after each block as they allow the c
 
 In the case of image classification, the MLP layer implements the classification head. It does it with one hidden layer at pre-training time and a single linear layer for fine-tuning.
 
-![ViT](cv_algorithms/images/vit.jpeg)
+![ViT](images/vit.jpeg)
 
 Raw images (left) with attention maps of the ViT-S/16 model (right). 
 
@@ -207,7 +207,7 @@ What are attention maps of ViT?
 
 Attention, more specifically, self-attention is one of the essential blocks of machine learning transformers. It is a computational primitive used to quantify pairwise entity interactions that help a network to learn the hierarchies and alignments present inside input data. Attention has proven to be a key element for vision networks to achieve higher robustness.
 
-![map](cv_algorithms/images/map.jpeg)
+![map](images/map.jpeg)
 
 Vision Transformer ViT Architecture
 
@@ -221,7 +221,7 @@ The overall architecture of the vision transformer model is given as follows in 
 6. Pre-train the ViT model with image labels, which is then fully supervised on a big dataset
 7. Fine-tune the downstream dataset for image classification
 
-![ViT_architecture](cv_algorithms/images/vit_arch.png)
+![ViT_architecture](images/vit_arch.png)
 
 While the ViT full-transformer architecture is a promising option for vision processing tasks, the performance of ViTs is still inferior to that of similar-sized CNN alternatives (such as ResNet) when trained from scratch on a mid-sized dataset such as ImageNet.
 
@@ -255,7 +255,7 @@ A vary straight-forward implementation of ConvNext could be found [here](https:/
 
 Image segmentation is a method in which an image is broken down into various subgroups called Image segments which helps in reducing the complexity of the image to make further processing or analysis of the image simpler. Segmentation in easy words is assigning labels to pixels. All picture elements or pixels belonging to the same category have a common label assigned to them.
 
-![segmentation](cv_algorithms/images/segmentation.png)
+![segmentation](images/segmentation.png)
 
 There are 4 major types of image segmentation (actually the types are 3 but Image Recognition which is more like a classification technique is included here in order to have an holistic overview):
 
@@ -263,13 +263,13 @@ There are 4 major types of image segmentation (actually the types are 3 but Imag
 
 Image recognition refers to technologies that identify places, logos, people, objects, buildings, and several other variables in digital images. The computer sees an image as numerical values of pixels and in order to recognise a certain image, it has to recognise the patterns and regularities in them. In the image recognition we try to classify the image into various categories.
 
-![recognition](cv_algorithms/images/recognition.png)
+![recognition](images/recognition.png)
 
 2. **Semantic Segmentation**
 
 Semantic segmentation is the task of clustering parts of an image together which belong to the same object class. It is a form of pixel-level prediction because each pixel in an image is classified according to a category.
 
-![semantic](cv_algorithms/images/semantic.png)
+![semantic](images/semantic.png)
 
 3. **Object Detection**
 
@@ -277,13 +277,13 @@ Object detection is a computer vision technique that works to identify and locat
 
 Object detection is commonly confused with image recognition, so before we proceed, it’s important that we clarify the distinctions between them. Image recognition assigns a label to an image. A picture of a dog receives the label “dog”. A picture of two dogs, still receives the label “dog”. Object detection, on the other hand, draws a box around each dog and labels the box “dog”. The model predicts where each object is and what label should be applied. In that way, object detection provides more information about an image than recognition.
 
-![object](cv_algorithms/images/object.png)
+![object](images/object.png)
 
 4. **Instance Segmentation**
 
 Instance Segmentation is the technique of detecting, segmenting, and classifying every individual object in an image. We can refer to Instance Segmentation as a combination of semantic segmentation and object detection (detecting all instances of a category in an image) with the additional feature of demarcating separate instances of any particular segment class added to the vanilla segmentation task. Instance Segmentation produces a richer output format as compared to both object detection and semantic segmentation networks.
 
-![instance](cv_algorithms/images/instance.png)
+![instance](images/instance.png)
 
 ##### **1.2.2.1 Object Detection / Image Segmentation algorithms**
 
@@ -291,7 +291,7 @@ Instance Segmentation is the technique of detecting, segmenting, and classifying
 
 [Ross Girshick et al](https://arxiv.org/pdf/1311.2524.pdf) proposed a method where we use selective search to extract just the regions from the image and he called them region proposals. Therefore, now, instead of trying to classify the whole image, you can just work with selected regions. These region proposals are generated using the selective search algorithm.
 
-![RCNN](cv_algorithms/images/rcnn.png)
+![RCNN](images/rcnn.png)
 
 An implementation in python for R-CNN could be found [here](https://towardsdatascience.com/step-by-step-r-cnn-implementation-from-scratch-in-python-e97101ccde55).
 
@@ -307,7 +307,7 @@ The same author of the previous paper(R-CNN) solved some of the drawbacks of R-C
 
 The reason “Fast R-CNN” is faster than R-CNN is because you don’t have to feed all region proposals to the convolutional neural network every time. Instead, the convolution operation is done only once per image and a feature map is generated from it.
 
-![Fast](cv_algorithms/images/fast.png)
+![Fast](images/fast.png)
 
 [Here](https://github.com/rbgirshick/fast-rcnn) could be found a handy implementation of Fast R-CNN.
 
@@ -319,7 +319,7 @@ Both of the above algorithms(R-CNN & Fast R-CNN) uses selective search to find o
 
 Similar to Fast R-CNN, the image is provided as an input to a convolutional network which provides a convolutional feature map. Instead of using selective search algorithm on the feature map to identify the region proposals, a separate network is used to predict the region proposals. The predicted region proposals are then reshaped using a RoI pooling layer which is then used to classify the image within the proposed region and predict the offset values for the bounding boxes.
 
-![Faster](cv_algorithms/images/faster.png)
+![Faster](images/faster.png)
 
 A great Keras implementation for Faster R-CNN could be found [here](https://towardsdatascience.com/faster-r-cnn-object-detection-implemented-by-keras-for-custom-data-from-googles-open-images-125f62b9141a).
 
@@ -340,13 +340,13 @@ The key element of Mask R-CNN is the pixel-to-pixel alignment, which is the main
 
 Furthermore, Mask R-CNN is simple to implement and train given the Faster R-CNN framework, which facilitates a wide range of flexible architecture designs. Additionally, the mask branch only adds a small computational overhead, enabling a fast system and rapid experimentation.
 
-![Mask](cv_algorithms/images/mask.png)
+![Mask](images/mask.png)
 
 ##### *1.2.2.1.5 YOLO (You Only Look Once)*
 
 All of the previous object detection algorithms use regions to localize the object within the image. The network does not look at the complete image. Instead, parts of the image which have high probabilities of containing the object. [YOLO or You Only Look Once](https://arxiv.org/abs/1506.02640) is an object detection algorithm much different from the region based algorithms seen above. In YOLO a single convolutional network predicts the bounding boxes and the class probabilities for these boxes.
 
-![YOLO](cv_algorithms/images/yolo.png)
+![YOLO](images/yolo.png)
 
 How YOLO works is that we take an image and split it into an SxS grid, within each of the grid we take m bounding boxes. For each of the bounding box, the network outputs a class probability and offset values for the bounding box. The bounding boxes having the class probability above a threshold value is selected and used to locate the object within the image.
 
