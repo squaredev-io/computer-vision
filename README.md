@@ -6,7 +6,7 @@ This repository contains examples and best practices for building Computer Visio
 
 In [cv_algorithms](cv_algorithms), a number of utilities are included to facilitate standard tasks like importing datasets and models in the formats required by various algorithms. For self-study and customisation in your own applications, there are implementations of a number of cutting-edge algorithms available.
 
-For more information regarding the theoretical part of Computer Vision please follow the guide [here](cv_algorithms/README.md)
+For more information regarding the theoretical part of Computer Vision please follow the guide [here](cv_algorithms/README.md).
 
 ## Getting Started
 
