@@ -60,7 +60,7 @@ To set up on your local machine:
 
 ## Algorithms
 
-The CV algorithms or libraries that are currently offered in the repository are listed in the table below. Under the Example column, you can find notebooks links. In addition, under the type column you can find a label on whether the example refers to data gathering, data annotation or a cv model (with the specific cv task).
+The CV algorithms or libraries that are currently offered in the repository are listed in the table below. Under the Example column, you can find notebooks links. In addition, under the type column you can find a label on whether the example refers to data gathering, data annotation, data augmentation or a cv model (with the specific cv task).
 
 
 | Algorithm / Library | Type | Description | Example |
