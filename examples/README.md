@@ -1,5 +1,0 @@
-# Computer Vision
-
-## Introduction
-
-
