@@ -73,14 +73,9 @@ The CV algorithms or libraries that are currently offered in the repository are 
 | Mask RCNN | cv model (detection/segmentation tasks) | Mask R-CNN is a state of the art model for instance segmentation, developed on top of Faster R-CNN. | [Quick start](examples/MaskRCNN.ipynb) |
 | Yolov5 | cv model (detection task) | YOLOv5 is an open-source project that consists of a family of object detection models and detection methods based on the YOLO model pre-trained on the COCO dataset. It is maintained by Ultralytics and represents the organization's open-source research into the future of Computer Vision works. | [Quick start](examples/YOLOv5.ipynb) |
 
-
-### Algorithm Comparison
-
 ## Contributing
 
 We welcome contributions and ideas for this project. Please review our [contribution guidelines](CONTRIBUTING.md) before contributing.
-
-## Related projects
 
 ## Reference papers / repos
 - [Facebook AI Research Detectron2](https://github.com/facebookresearch/detectron2)

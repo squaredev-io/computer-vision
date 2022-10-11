@@ -16,16 +16,16 @@ The following platforms are covered in this document's setup instructions for al
   - [Setup guide for Docker](#setup-guide-for-docker)
   - [Setup guide for making a release](#setup-guide-for-making-a-release)
 
-Different computational needs apply depending on the XAI system type and the notebook that needs to be run.
+Different computational needs apply depending on the Computer Vision system type and the notebook that needs to be run.
 Currently, this repository supports **Python CPU** and **Python GPU**
 
 ## Setup guide for Local
 
-The xai algorithms can be applied in a variety of ways.
+The computer vision algorithms can be applied in a variety of ways.
 
 Building a docker image and utilizing its features is one method with a [docker container](#setup-guide-for-docker).
 
-Another option is to directly execute every xai algorithm from a local copy of the source code. Installing all required Anaconda and PyPI dependencies is required for this. To learn how to do this, refer to [this guide](conda.md).
+Another option is to directly execute every computer vision algorithm from a local copy of the source code. Installing all required Anaconda and PyPI dependencies is required for this. To learn how to do this, refer to [this guide](conda.md).
 
 ### Requirements
 
