@@ -68,10 +68,10 @@ The CV algorithms or libraries that are currently offered in the repository are 
 | Fifty-One Library | data gathering / data annotation | FiftyOne is a very useful library for visualization and annotation of your data | [Quick start](data_gathering/FiftyOne_(for_M1).ipynb) |
 | SimpleImage Library | data gathering | A keyword downloader for Google images | [Quick start](data_gathering/SimpleImage.ipynb) |
 | LabelMe library | data annotation | LabelMe is a graphical image annotation tool. It is written in Python and uses Qt for its graphical interface. | [Quick start](data_annotation/LabelMe.ipynb) |
-| CLoDSA | data augmentation | CLoDSA is an open-source image augmentation library for object classification, localization, detection, semantic segmentation and instance segmentation. | [Quick start](examples/CLODSA.ipynb) |
+| CLoDSA | data augmentation | CLoDSA is an open-source image augmentation library for object classification, localization, detection, semantic segmentation and instance segmentation. | [Quick start](data_augmentation/CLODSA.ipynb) |
 | Detectron2 | cv model (multiple tasks) | Detectron2 is Facebook AI Research's next generation library that provides state-of-the-art detection and segmentation algorithms. It is the successor of Detectron and maskrcnn-benchmark. It supports a number of computer vision research projects and production applications in Facebook. | [Quick start](examples/Detectron_2.ipynb) |
 | Mask RCNN | cv model (detection/segmentation tasks) | Mask R-CNN is a state of the art model for instance segmentation, developed on top of Faster R-CNN. | [Quick start](examples/MaskRCNN.ipynb) |
-
+| Yolov5 | cv model (detection task) | YOLOv5 is an open-source project that consists of a family of object detection models and detection methods based on the YOLO model pre-trained on the COCO dataset. It is maintained by Ultralytics and represents the organization's open-source research into the future of Computer Vision works. | [Quick start](examples/YOLOv5.ipynb) |
 
 
 ### Algorithm Comparison
