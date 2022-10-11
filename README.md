@@ -12,8 +12,8 @@ For more information regarding the theoretical part of Computer Vision please fo
 
 For additional information on configuring your system locally, please refer to the [setup guide](SETUP.md).
 
-The XAI package installation has been tested using
-- Python version 3.10 and [venv](https://docs.python.org/3/library/venv.html), or [conda](https://docs.conda.io/projects/conda/en/latest/glossary.html?highlight=environment#conda-environment)
+The Computer Vision package installation has been tested using
+- Python version 3.8 and [venv](https://docs.python.org/3/library/venv.html), or [conda](https://docs.conda.io/projects/conda/en/latest/glossary.html?highlight=environment#conda-environment)
 
 The package and its dependencies should be installed in a clean environment (such as
 [conda](https://docs.conda.io/projects/conda/en/latest/glossary.html?highlight=environment#conda-environment) or [venv](https://docs.python.org/3/library/venv.html)).
@@ -31,7 +31,7 @@ To set up on your local machine:
          sudo apt-get install -y build-essential libpython<version>
          ``` 
 
-         where `<version>` should be the Python version (e.g. `3.10`).
+         where `<version>` should be the Python version (e.g. `3.8`).
 
        + On Windows you will need [Microsoft C++ Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/).
     
