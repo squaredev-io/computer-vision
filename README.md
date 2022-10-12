@@ -65,9 +65,9 @@ The CV algorithms or libraries that are currently offered in the repository are 
 
 | Algorithm / Library | Type | Description | Example | Environment |
 |-----------|------|-------------|---------|--------|
-| Fifty-One Library | data gathering / data annotation | FiftyOne is a very useful library for visualization and annotation of your data | [Quick start](data_gathering/FiftyOne_(for_M1).ipynb) | local machine |
-| SimpleImage Library | data gathering | A keyword downloader for Google images | [Quick start](data_gathering/SimpleImage.ipynb) | local machine |
-| LabelMe library | data annotation | LabelMe is a graphical image annotation tool. It is written in Python and uses Qt for its graphical interface. | [Quick start](data_annotation/LabelMe.ipynb) | local machine |
+| Fifty-One Library | data gathering / data annotation | FiftyOne is a very useful library for visualization and annotation of your data | [Quick start](data_gathering/FiftyOne_(for_M1).py) | local machine |
+| SimpleImage Library | data gathering | A keyword downloader for Google images | [Quick start](data_gathering/SimpleImage.py) | local machine |
+| LabelMe library | data annotation | LabelMe is a graphical image annotation tool. It is written in Python and uses Qt for its graphical interface. | [Quick start](data_annotation/LabelMe.py) | local machine |
 | CLoDSA | data augmentation | CLoDSA is an open-source image augmentation library for object classification, localization, detection, semantic segmentation and instance segmentation. | [Quick start](data_augmentation/CLODSA.ipynb) | Google Colab |
 | Detectron2 | cv model (multiple tasks) | Detectron2 is Facebook AI Research's next generation library that provides state-of-the-art detection and segmentation algorithms. It is the successor of Detectron and maskrcnn-benchmark. It supports a number of computer vision research projects and production applications in Facebook. | [Quick start](examples/Detectron_2.ipynb) | Google Colab |
 | Mask RCNN | cv model (detection/segmentation tasks) | Mask R-CNN is a state of the art model for instance segmentation, developed on top of Faster R-CNN. | [Quick start](examples/MaskRCNN.ipynb) | Google Colab |
