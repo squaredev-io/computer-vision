@@ -1,6 +1,6 @@
 # Step 1
 
-conda install fiftyone #or pip
+# conda install fiftyone or pip
 
 # Step 2
 
