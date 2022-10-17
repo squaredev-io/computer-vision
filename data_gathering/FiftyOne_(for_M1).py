@@ -17,7 +17,7 @@ conda install fiftyone #or pip
 
 # Step 5
 
-# Download kai inspect the data
+# Download and inspect the data
 
 import fiftyone as fo
 import fiftyone.zoo as foz
