@@ -1,6 +1,6 @@
 # SimpleImage is a library used for downloading images based on keywords mostly from Google. 
 
-pip install --upgrade simple_image_download
+# pip install --upgrade simple_image_download
 
 from simple_image_download import simple_image_download as sp
 response = sp.simple_image_download()
