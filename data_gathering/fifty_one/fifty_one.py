@@ -21,8 +21,8 @@ export_dir = "{path}"
 dataset_type=fo.types.FiftyOneImageDetectionDataset
 dataset.export(export_dir=export_dir,dataset_type=dataset_type)
 
-#Here is a way to open a browser page and to inspect the data
-#in real-time
+# Here is a way to open a browser page and to inspect the data
+# in real-time
 
 session = fo.launch_app(dataset, port=5151)
 session.wait()
