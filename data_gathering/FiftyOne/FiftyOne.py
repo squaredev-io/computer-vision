@@ -1,21 +1,3 @@
-# Step 1
-
-# conda install fiftyone or pip
-
-# Step 2
-
-# Download MongoDB Compass from here: https://www.mongodb.com/products/compass
-
-# Step 3
-
-# Open MongDB Compass and take your URI.
-
-# Step 4
-
-# Connect to your MongoDDB and execute the following command to your terminal:
-# export FIFTYONE_DATABASE_URI={your URI} (e.g. mongodb://localhost:34017)
-
-# Step 5
 
 # Download and inspect the data
 
