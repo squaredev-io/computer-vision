@@ -42,3 +42,6 @@ We welcome contributions and ideas for this project. Please review our [contribu
 ## Reference papers / repos
 - [Facebook AI Research Detectron2](https://github.com/facebookresearch/detectron2)
 - [Mask RCNN](https://arxiv.org/abs/1703.06870)
+- [Human Pose guide]("https://www.tensorflow.org/lite/tutorials/pose_classification")
+- [MoveNet]("https://www.tensorflow.org/hub/tutorials/movenet")
+- [OpenPose]("https://cmu-perceptual-computing-lab.github.io/openpose/web/html/doc/md_doc_00_index.html")
