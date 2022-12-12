@@ -10,9 +10,7 @@ For more information regarding the theoretical part of Computer Vision please fo
 
 ## Getting Started
 
-For additional information on configuring your system locally, please refer to the [setup guide](SETUP.md).
-
-For the libraries/models which have the indication of "local machine" in the table below the installation has been tested using
+For the libraries/models in the table below the installation has been tested using
 - Python version 3.8 and [venv](https://docs.python.org/3/library/venv.html), or [conda](https://docs.conda.io/projects/conda/en/latest/glossary.html?highlight=environment#conda-environment)
 
 The package and its dependencies should be installed in a clean environment (such as
@@ -26,9 +24,9 @@ The CV algorithms or libraries that are currently offered in the repository are 
 
 | Algorithm / Library | Type | Description | Example |
 |-----------|------|-------------|---------|
-| Fifty-One Library | data gathering / data annotation | FiftyOne is a very useful library for visualization and annotation of your data | [Quick start](data_gathering/FiftyOne/FiftyOne.py) |
-| SimpleImage Library | data gathering | A keyword downloader for Google images | [Quick start](data_gathering/SimpleImage/SimpleImage.py) |
-| LabelMe library | data annotation | LabelMe is a graphical image annotation tool. It is written in Python and uses Qt for its graphical interface. | [Quick start](data_annotation/LabelMe/README.md) |
+| Fifty-One Library | data gathering / data annotation | FiftyOne is a very useful library for visualization and annotation of your data | [Quick start](data_gathering/FiftyOne) |
+| SimpleImage Library | data gathering | A keyword downloader for Google images | [Quick start](data_gathering/SimpleImage) |
+| LabelMe library | data annotation | LabelMe is a graphical image annotation tool. It is written in Python and uses Qt for its graphical interface. | [Quick start](data_annotation/LabelMe) |
 | CLoDSA | data augmentation | CLoDSA is an open-source image augmentation library for object classification, localization, detection, semantic segmentation and instance segmentation. | [Quick start](data_augmentation/CLoDSA/CLoDSA.ipynb) |
 | Detectron2 | cv model (multiple tasks) | Detectron2 is Facebook AI Research's next generation library that provides state-of-the-art detection and segmentation algorithms. It is the successor of Detectron and maskrcnn-benchmark. It supports a number of computer vision research projects and production applications in Facebook. | [Quick start](cv_algorithms/Detectron_2/Detectron_2.ipynb) |
 | Mask RCNN | cv model (detection/segmentation tasks) | Mask R-CNN is a state of the art model for instance segmentation, developed on top of Faster R-CNN. | [Quick start](cv_algorithms/MaskRCNN/MaskRCNN.ipynb) |
