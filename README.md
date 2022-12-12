@@ -33,6 +33,7 @@ The CV algorithms or libraries that are currently offered in the repository are 
 | Detectron2 | cv model (multiple tasks) | Detectron2 is Facebook AI Research's next generation library that provides state-of-the-art detection and segmentation algorithms. It is the successor of Detectron and maskrcnn-benchmark. It supports a number of computer vision research projects and production applications in Facebook. | [Quick start](cv_algorithms/Detectron_2/Detectron_2.ipynb) |
 | Mask RCNN | cv model (detection/segmentation tasks) | Mask R-CNN is a state of the art model for instance segmentation, developed on top of Faster R-CNN. | [Quick start](cv_algorithms/MaskRCNN/MaskRCNN.ipynb) |
 | Yolov5 | cv model (detection task) | YOLOv5 is an open-source project that consists of a family of object detection models and detection methods based on the YOLO model pre-trained on the COCO dataset. It is maintained by Ultralytics and represents the organization's open-source research into the future of Computer Vision works. | [Quick start](cv_algorithms/YOLOv5/YOLOv5.ipynb) |
+| Human Pose | cv algorithms for classification of human pose| It uses [OpenPose]("https://github.com/CMU-Perceptual-Computing-Lab/openpose") which is the first real-time multi-person system to jointly detect human body, hand, facial, and foot keypoints (in total 135 keypoints) on single images, [MoveNet]("https://www.tensorflow.org/hub/tutorials/movenet") which is an ultra fast and accurate model that detects 17 keypoints of a body and a custom tensorflow model. | [Quick start](cv_algorithms/Human_pose_classification/Human_pose_classification.ipynb) |
 
 ## Contributing
 
@@ -41,3 +42,6 @@ We welcome contributions and ideas for this project. Please review our [contribu
 ## Reference papers / repos
 - [Facebook AI Research Detectron2](https://github.com/facebookresearch/detectron2)
 - [Mask RCNN](https://arxiv.org/abs/1703.06870)
+- [Human Pose guide](https://www.tensorflow.org/lite/tutorials/pose_classification)
+- [MoveNet](https://www.tensorflow.org/hub/tutorials/movenet)
+- [OpenPose](https://cmu-perceptual-computing-lab.github.io/openpose/web/html/doc/md_doc_00_index.html)
